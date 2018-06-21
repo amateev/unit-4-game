@@ -1,0 +1,67 @@
+	body {
+		background-image: url('/assets/images/stripes-light.png');
+		margin: 0;
+	}
+
+	.container {
+			width: 400px;
+			padding: 20px;
+			background-color: #ffffff;
+			opacity: 0.75;
+			border: solid gray 1px;
+			font-weight: bold;
+			color: #000000;
+			line-height: 1.8;
+			
+	}
+
+	header {
+		background-color: orange;
+		height: 40px;
+		font-size: 20px;
+		text-align: center;
+	}
+	div.rules {
+		color: green;
+		background: pink;
+		margin-top: 20px;
+		padding: 5px;
+	}
+
+	section {
+		margin-top: 20px;
+	}
+
+	div.random-number {
+		background: lightgreen;
+		font-size: 40px;
+		width: 180px;
+		height: 80px;
+		float: left;
+		margin-right: 20px;
+	}
+
+	
+
+	div.counter {
+		background-color: blue;
+		float: left;
+	}
+
+	button {
+		clear: both;
+		margin-top: 20px;
+	}
+
+	p#total-score {
+		 background:darkgreen;
+		 margin-top: 20px;
+	}
+
+	div#points-sum {
+			background:darkgreen;
+			font-size: 40px;
+			width: 200px;
+			height: 80px;
+			margin-top: 20px;
+	}
