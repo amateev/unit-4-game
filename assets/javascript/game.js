@@ -9,18 +9,11 @@ var diamondHiddenNumber;
 var emeraldHiddenNumber;
 
 
-function () {
+function isGame() {
 	// new random number is generated
 	randomNumber = Math.floor((Math.random() * 102) + 19);
 	$('.random-number').html(randomNumber);
 
-
-	// // new random hidden number is generated for:
-	
-	// rubyHiddenNumber =  Math.floor((Math.random() * 12) + 1);
-	// sapphireHiddenNumber =  Math.floor((Math.random() * 12) + 1);
-	// diamondHiddenNumber =  Math.floor((Math.random() * 12) + 1);
-	// emeraldHiddenNumber =  Math.floor((Math.random() * 12) + 1);
 
 	// if random number equals to sum of points: 
 	// wins increases by 1
@@ -57,7 +50,7 @@ $('#ruby').on ('click', function () {
 		$('#points-sum').html(pointsSum);
 	})
 
-//by clicking on ruby button
+//by clicking on sapphire button
 $('#sapphire').on ('click', function () {
 		//random number associated with this button is generated
 		sapphireHiddenNumber =  Math.floor((Math.random() * 12) + 1);
@@ -69,7 +62,7 @@ $('#sapphire').on ('click', function () {
 		$('#points-sum').html(pointsSum);
 	})
 
-//by clicking on ruby button
+//by clicking on diamond button
 $('#diamond').on ('click', function () {
 		//random number associated with this button is generated
 		diamondHiddenNumber =  Math.floor((Math.random() * 12) + 1);
@@ -81,7 +74,7 @@ $('#diamond').on ('click', function () {
 		$('#points-sum').html(pointsSum);
 	})
 
-//by clicking on ruby button
+//by clicking on emerald button
 $('#emerald').on ('click', function () {
 		//random number associated with this button is generated
 		emeraldHiddenNumber =  Math.floor((Math.random() * 12) + 1);
@@ -92,13 +85,3 @@ $('#emerald').on ('click', function () {
 		//number id displayed in points-sum div
 		$('#points-sum').html(pointsSum);
 	})
-
-
-
-
-
-	
-
-
-
-
