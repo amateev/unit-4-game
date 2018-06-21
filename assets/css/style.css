@@ -34,10 +34,11 @@
 	div.random-number {
 		background: lightgreen;
 		font-size: 40px;
-		width: 180px;
-		height: 80px;
+		width: 160px;
+		height: 90px;
 		float: left;
 		margin-right: 20px;
+		padding: 5px;
 	}
 
 	
@@ -45,6 +46,9 @@
 	div.counter {
 		background-color: blue;
 		float: left;
+		width: 170px;
+		height: 90px;
+		padding: 5px;
 	}
 
 	button {
@@ -55,12 +59,14 @@
 	p#total-score {
 		 background:darkgreen;
 		 margin-top: 20px;
+		 padding: 5px;
 	}
 
 	div#points-sum {
 			background:darkgreen;
 			font-size: 40px;
 			width: 200px;
-			height: 80px;
+			height: 70px;
 			margin-top: 20px;
+			padding: 5px;
 	}
