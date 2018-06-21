@@ -39,7 +39,7 @@ function cristalCollectorGame() {
 
 
 	//by clicking on ruby button
-	$('#ruby').on ('click', function () {
+	$('#ruby').on ('click', function() {
 
 			// pointsSum increases by the random number associated with ruby
 			pointsSum = pointsSum + rubyHiddenNumber;
@@ -50,7 +50,7 @@ function cristalCollectorGame() {
 		
 		})
 	//by clicking on sapphire button
-	$('#sapphire').on ('click', function () {
+	$('#sapphire').on ('click', function() {
 			// pointsSum increases by the random number associated with sapphire
 			pointsSum = pointsSum + sapphireHiddenNumber;
 
@@ -59,7 +59,7 @@ function cristalCollectorGame() {
 		})
 
 	//by clicking on diamond button
-	$('#diamond').on ('click', function () {
+	$('#diamond').on ('click', function() {
 			// pointsSum increases by the random number associated with diamond
 			pointsSum = pointsSum + diamondHiddenNumber;
 
@@ -68,24 +68,43 @@ function cristalCollectorGame() {
 		})
 
 	//by clicking on emerald button
-	$('#emerald').on ('click', function () {
+	$('#emerald').on ('click', function() {
 			// pointsSum increases by the random number associated with emerald
 			pointsSum = pointsSum + emeraldHiddenNumber;
 
 			//number id displayed in points-sum div
 			$('#points-sum').html(pointsSum);
 		})
-	if (randomNumber === pointsSum) {
+
+
+
+
+
+	
+	if (randomNumber < pointsSum) {
+			//by clicking on ruby button
+	$('#ruby').on ('click', function() {
+
+			// pointsSum increases by the random number associated with ruby
+			pointsSum = pointsSum + rubyHiddenNumber;
+
+			//number id displayed in points-sum div
+			$('#points-sum').html(pointsSum);
+
+		
+		})
+	}
+	else if (randomNumber === pointsSum) {
 		 	wins++
 		 	$('#wins').html(wins);
 		 	$('#alert').html('You win!');
-		 	// isGameUp = false;
+		 	isGameUp = false;
 
 		}	else if (randomNumber > pointsSum) {
 	 	losses++
 	 	$('#losses').html(losses);
 	 	$('#alert').html('You lost!');
-	 	// isGameUp = false;
+	 	isGameUp = false;
 	 	
 	 	}
 
