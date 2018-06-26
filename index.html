@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>CrystalsCollector Game</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- bootstrap -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Reset -->
 	<link rel='stylesheet' href='assets/css/reset.css'>
 	<!-- css -->
 	<link rel='stylesheet' href='assets/css/style.css'>
-	<!-- <style type='text/css'> -->
-	
+
+
 
 
 </head>
+
 <body>
-		
+
 	<div class='container'>
-	<header>CrystalCollector!</header>
+		<header>CrystalCollector!</header>
 
-	<!-- rules -->
-	
-	<div class='rules'>
-		<p>You will be given a random number at the start of the game.</p><br>
-		<p>There are four cristals below. By clicking on a cristal you will add a specific amount of points to your total score.</p><br>
-		<p>You win the game by matching your total score to random number, you loose the agame if your total score goes above the random number.</p><br>
-		<p>The value of each crystal is hidden from you until you click on it.</p><br>
-	</div>
-	
+		<!-- rules -->
 
-	<!-- game -->
-	<div class='game'>
-		<section>
-			<div class='random-number'></div>
-			<div class='counter'>
-			<p id='alert'></p>
-			<p>Wins: <span id='wins'></span></p>
-			<p>Losses: <span id='losses'></span></p>
-			</div>
-		</section>
-
-
-		<!-- stones  -->
-		<div class='buttons'>
-			<button type="button" id='ruby'>ruby</button>
-			<button type="button" id='sapphire'>sapphire</button>
-			<button type="button" id='diamond'>diamond</button>
-			<button type="button" id='emerald'>emerald</button>
+		<div class='rules'>
+			<p>You will be given a random number at the start of the game.</p>
+			<br>
+			<p>There are four cristals below. By clicking on a cristal you will add a specific amount of points to your total score.</p>
+			<br>
+			<p>You win the game by matching your total score to random number, you loose the agame if your total score goes above the
+				random number.</p>
+			<br>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<br>
 		</div>
-		<p id='total-score'>Your total score is: </p>
-		<div id='points-sum'></div>
-	</div>
-	<!-- game is over -->
+
+
+		<!-- game -->
+		<div class='game'>
+			<section>
+				<div class='random-number'></div>
+				<div class='counter'>
+					<p id='alert'></p>
+					<p>Wins:
+						<span id='wins'></span>
+					</p>
+					<p>Losses:
+						<span id='losses'></span>
+					</p>
+				</div>
+			</section>
+
+
+			<!-- stones  -->
+			<div class='buttons'>
+				<button type="button" id='ruby'>ruby</button>
+				<button type="button" id='sapphire'>sapphire</button>
+				<button type="button" id='diamond'>diamond</button>
+				<button type="button" id='emerald'>emerald</button>
+			</div>
+			<p id='total-score'>Your total score is: </p>
+			<div id='points-sum'></div>
+		</div>
+		<!-- game is over -->
 	</div>
 
- <!-- Added link to the jQuery Library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- java script -->
-<script src="assets/javascript/game.js"></script>
+	<!-- Added link to the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- java script -->
+	<script src="assets/javascript/game.js"></script>
 
 
 </body>
+
 </html>

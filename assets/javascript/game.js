@@ -41,6 +41,7 @@ initNewCollectorGame();
 
 
 //event handler
+// assign event handler on click event of the button ruby
 $('#ruby').on ('click', function() {
 
 		// pointsSum increases by the random number associated with ruby
